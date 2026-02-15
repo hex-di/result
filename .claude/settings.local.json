@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm search:*)",
+      "Bash(npm view:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "Bash(npx --yes tsc:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:effect.website)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:tanstack.com)",
+      "WebFetch(domain:rust-lang.github.io)",
+      "WebFetch(domain:rust-analyzer.github.io)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(rustc:*)",
+      "Bash(cargo --version:*)",
+      "Bash(cargo clippy:*)",
+      "Bash(rust-analyzer:*)",
+      "Bash(clippy-driver:*)",
+      "Bash(for lint in \"unwrap-used\" \"expect-used\" \"map-err-ignore\" \"result-large-err\" \"result-unit-err\" \"panic-in-result-fn\" \"unwrap-in-result\" \"question-mark\" \"try-err\" \"assertions-on-result-states\" \"unnecessary-unwrap\" \"panicking-unwrap\" \"ok-expect\" \"result-map-unit-fn\" \"result-map-or-into-option\" \"result-filter-map\" \"match-result-ok\" \"needless-question-mark\" \"manual-unwrap-or\" \"manual-unwrap-or-default\" \"unnecessary-literal-unwrap\" \"unnecessary-map-on-constructor\" \"unnecessary-result-map-or-else\" \"unused-result-ok\" \"get-unwrap\" \"or-then-unwrap\" \"map-collect-result-unit\" \"err-expect\" \"error-impl-error\" \"fallible-impl-from\" \"map-unwrap-or\" \"manual-is-variant-and\" \"iter-filter-is-ok\" \"obfuscated-if-else\" \"question-mark-used\")",
+      "Bash(do echo \"=== clippy::$lint ===\" cargo clippy --explain \"$lint\")",
+      "Bash(for lint in \"for-loops-over-fallibles\" \"unused-must-use\" \"unused-results\" \"unreachable-code\" \"unreachable-patterns\" \"dead-code\")",
+      "Bash(do:*)",
+      "Bash(echo:*)",
+      "Bash(for lint in \"missing-errors-doc\" \"unnecessary-wraps\" \"match-wildcard-for-single-variants\" \"match-wild-err-arm\" \"redundant-pattern-matching\" \"redundant-closure-for-method-calls\" \"manual-map\" \"option-if-let-else\" \"manual-let-else\" \"bind-instead-of-map\" \"lines-filter-map-ok\" \"manual-ok-or\" \"option-map-or-err-ok\" \"manual-try-fold\" \"single-match-else\" \"match-same-arms\" \"for-loops-over-fallibles\" \"double-must-use\" \"must-use-candidate\" \"must-use-unit\" \"let-underscore-must-use\" \"return-self-not-must-use\")",
+      "Bash(for lint in \"option-map-or-none\" \"flat-map-option\" \"manual-filter-map\" \"manual-find-map\" \"unnecessary-fallible-conversions\" \"unnecessary-lazy-evaluations\" \"useless-conversion\" \"from-over-into\" \"map-unit-fn\" \"manual-flatten\" \"redundant-closure\" \"wildcard-enum-match-arm\" \"match-bool\" \"single-match\" \"collapsible-match\" \"infallible-destructuring-match\" \"manual-filter\" \"match-as-ref\" \"match-like-matches-macro\" \"match-ref-pats\" \"match-single-binding\")",
+      "Bash(for lint in \"unnecessary-wraps\" \"iter-filter-is-some\" \"flat-map-option\" \"option-if-let-else\" \"manual-ok-or\" \"option-as-ref-cloned\" \"from-iter-instead-of-collect\")"
+    ]
+  }
+}

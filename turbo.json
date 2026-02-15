@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"],
+      "description": "Build package"
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "description": "Run tests"
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "description": "Lint source code"
+    },
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "description": "Type-check without emit"
+    },
+    "clean": {
+      "cache": false,
+      "description": "Remove build artifacts"
+    }
+  }
+}
