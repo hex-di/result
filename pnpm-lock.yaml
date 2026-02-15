@@ -33,7 +33,7 @@ importers:
   packages/result:
     dependencies:
       typescript:
-        specifier: '>=5.0'
+        specifier: '>=5.6'
         version: 5.9.3
     devDependencies:
       '@cucumber/cucumber':
