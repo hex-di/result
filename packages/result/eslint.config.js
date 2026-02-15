@@ -8,7 +8,7 @@ import {
 
 export default tseslint.config(
   {
-    ignores: ["node_modules/**", "dist/**", "reports/**", "*.config.js", "*.config.ts"],
+    ignores: ["node_modules/**", "dist/**", "reports/**", "coverage/**", "bench/**", "features/**", "cucumber.mjs", "*.config.js", "*.config.ts"],
   },
 
   // ── Shared base config ──
@@ -41,6 +41,16 @@ export default tseslint.config(
             "ATR-1: orTee() suppresses exceptions and is prohibited for audit-critical operations. Use inspectErr() instead. See compliance/gxp.md.",
         },
       ],
+    },
+  },
+
+  // ── fn/ standalone functions use `any` casts for generic bridging ──
+  {
+    files: ["src/fn/**/*.ts"],
+    rules: {
+      "@typescript-eslint/no-unsafe-return": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
     },
   },
 

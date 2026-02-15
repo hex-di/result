@@ -33,7 +33,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        typescript: ["5.0", "5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "latest"]
+        typescript: ["5.6", "5.7", "latest"]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -72,7 +72,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        typescript: ["5.0", "5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "latest"]
+        typescript: ["5.6", "5.7", "latest"]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4

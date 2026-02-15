@@ -127,7 +127,7 @@ describe("BEH-06-003: ResultAsync static constructors (ok, err, fromPromise, fro
     it("returns the first ResultAsync to resolve", async () => {
       const fast = ResultAsync.ok(1);
       const slow = new Promise<never>(() => {}); // never resolves
-      const result = await ResultAsync.race(fast, ResultAsync.fromSafePromise(slow as Promise<never>));
+      const result = await ResultAsync.race(fast, ResultAsync.fromSafePromise(slow));
       expect(result._tag).toBe("Ok");
       if (result.isOk()) expect(result.value).toBe(1);
     });
